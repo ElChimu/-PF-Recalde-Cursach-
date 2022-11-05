@@ -1,0 +1,653 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+    img{
+        max-width: 100%;
+    }
+
+    iframe{
+        max-width: 100%;
+    }
+
+    fieldset{
+        max-width: 100%;
+    }
+
+    .animacion-h1{
+        animation-name: aparecer;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes aparecer {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .body-inicio{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "section section section"
+        "footer footer footer";
+
+        grid-template-columns: repeat(3 , 1fr);
+        background-image: linear-gradient(to bottom right, black, #976914);
+    }
+
+    .body-quienes {
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "section section section"
+        "box1 box1 box1"
+        "footer footer footer";
+
+        grid-template-columns: repeat(3 , 1fr);
+        background-image: linear-gradient(to bottom right, black, #976914);
+    }
+
+    .body-consecionarios{
+        background-image: linear-gradient(to bottom right, black, #976914);
+    }
+
+    
+    .body-modelos {
+        
+        background-color: black;
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "section section section"
+        "box-hilux box-hilux box-hilux"
+        "footer footer footer";
+
+        grid-template-rows: repeat( 1, 1fr);
+        background-image: linear-gradient(to bottom right, black, #976914);
+    } 
+
+    .body-contacto{
+        background-image: linear-gradient(to bottom right, black, #976914); 
+    }
+
+    
+
+    header {
+        display: flex;
+        justify-content: center;
+        grid-area: header;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+        margin-top: 10px;
+        grid-area: nav;
+    }
+
+        
+    ul {
+        background-color: #976914;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+        row-gap: 10px;
+        list-style-type: none;
+    }
+
+    @media screen and (max-width: 450px) {
+        ul {
+            flex-direction: column;
+        }
+
+    }
+
+    .ul li {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+
+    .nav_ul :hover{
+        transform: scale(1.1);
+        background-color: gray;
+        transition: all .6s;
+    }    
+
+    .nav li a {
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        margin-inline: 15px;
+        text-decoration: none;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .nav li a {
+            font-size: 8px;
+        }
+
+    }
+
+
+
+    .section img {
+        background-image: url(/imagenes/toyota\ section.jpg);
+        width: 100%;
+        height:100% ;
+    }
+
+    .section {
+        grid-area: section;
+    }
+
+    .section article {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 800;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px 10px 10px 10px;
+        padding: 15px;
+        text-align: center;
+        grid-area: section_article;
+    }
+
+    @media screen and (max-width: 768px) {
+        .section article {
+            font-size: 10px;}
+
+    }
+
+    .box1 {
+        width: 100%;
+        height: 300px;
+        margin-top: 0px;
+        display: flex;
+        grid-area: box1 ;
+    }
+
+    @media screen and (max-width: 768px) {
+        .box1 {
+            flex-direction: column;
+        }
+
+    }
+
+    .img quienes{
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .box1 p {
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        text-align: center  ;
+        color: gray;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;   
+        margin-bottom: 10px;    
+    }
+
+    @media screen and (max-width: 767px) {
+        .box1 p {
+            flex-direction: row;
+            font-size: 8px;
+            margin-bottom: 5px;
+        }
+
+    }
+
+    .box2_grid {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-area: box-hilux;
+    }
+
+
+    .box2_h2 {
+        background-color: #976914;
+        padding: 8px;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 25px;
+        border: 3px solid;
+    }
+
+        
+    @media screen and (max-width: 740px) { 
+        .box2_h2{
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+        }
+        
+        
+    }
+
+    .box2_p {
+        display: flex;
+        color: grey;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-align: center; 
+        margin-bottom: 40px;
+        border: 2px solid;
+        border-color: black;
+    }
+
+        
+    @media screen and (max-width: 740px) { 
+        .box2_p{
+            display: flex;
+            flex-direction: column;
+            font-size: 10px;
+        }
+        
+        
+    }
+
+    
+    .box2_img{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .box2_img :hover{
+        transform: scale(1.2);
+        background-color: gray;
+        transition: all .6s;
+    }    
+
+        
+    @media screen and (max-width: 740px) { 
+        .box2_img{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        
+        
+    }
+
+    .cartita {
+        display: flex;
+        justify-content: center;    
+    }
+
+    @media screen and (max-width:710px) {
+        .cartita{
+            font-size: 12px;
+        }
+        
+    }
+
+    .section_contacto_h1 {
+        color: white;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+    @media screen and (max-width:460px) {
+        .section_contacto_h1{
+            font-size: 10px;
+        }
+        
+    }
+
+    .form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        color: #976914;
+        background-color: #111;
+        margin-bottom: 25px;
+        margin-top: 40px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width:460px) {
+        .form{
+            font-size: 12px;
+        }
+        
+    }
+
+    .form fieldset {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    @media screen and (max-width:400px) {
+        .form fieldset {
+            font-size: 12px;
+        }
+        
+    }
+
+    .cartita img {
+    margin-top: 15px;
+    max-width: 100%;
+    }
+
+
+    .footer {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        background-size: cover;
+        margin-top: 25px;
+        grid-area: footer;
+        border: 1.5px solid;
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer {
+            flex-direction: column;}
+
+    }
+
+
+    .footer a {
+        color: black;
+        font-weight: 800;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .footer a :hover{
+        transform: scale(1.4);
+        background-color: gray;
+        transition: all .6s;
+    }    
+
+    .footer h4 {
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    @media screen and (max-width: 818px) {
+        footer {
+            font-size: 5px;
+        }
+
+    }
+
+
+    .section_consecionarios{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .section_h1 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    
+    @media screen and (max-width: 768px) {
+
+        .section_h1 {
+            font-size: 15px;
+            text-align: center;
+        }
+
+    }
+
+    .section_p {
+        color: #976914;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .section_p {
+            font-size: 10px;
+            text-align: center;
+        }
+
+    }
+    .footer p {
+        color: white;
+        text-align: center;
+        margin-top: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .box3 {
+        width: 100%;
+        height: 380px;
+        background-color: #111;
+        padding: 35px;
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        align-content: space-around;
+        font-family: 'Roboto', sans-serif;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width:710px) {
+        .box3{
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        
+    }
+
+    .consecionarios{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .box3 h3 {
+        text-decoration: underline;
+        color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .box3 h3 {
+            font-size: 10px;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+    }
+
+    .box3 p {
+        color: #976914;
+    }
+    
+    @media screen and (max-width: 768px) {
+
+        .box3 p {
+            font-size: 7px;
+            text-align: center;
+        }
+
+    }
+    button{
+        border-color: black;
+        background-color: #976914;
+        border-radius: 6px;
+    }
+
+    form button:hover {
+        transform: scale(1.2);
+    }
+
+    input {
+        background-color: #976914;
+        text-align: center;
+    }
+
+    input:focus{
+        width: 200px;
+        outline: none;
+    }
+
+    ::placeholder{
+        color: black;
+    }
+
+    .body_prueba{
+        background-color: white;
+    }
+
+    @media  screen and (min-width: 768px) {
+        .body_prueba{
+            background-color: blue;
+        }
+        
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-rows: minmax(200px, auto);
+        border: 6px solid black;
+        gap: 5px;
+        padding: 20px;
+        margin-top: 200px;
+    }
+    .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        background: black;
+        border: 10px solid black;
+    }
+    .grid-texto {
+        grid-column: 1 / span 3;
+        color: #976914;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    .grid-texto-p{
+        grid-column: 1 / span 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color:#976914;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    .grid-img-vehiculo-hilux{
+        background-image: url(../imagenes/hilux.jpg);
+        background-repeat: no-repeat no-repeat;
+        background-size: cover;
+    }
+    .grid-img-motor-hilux{
+        background-image: url(../imagenes/hiluxmotor.jpg);
+        background-repeat: no-repeat no-repeat;
+        background-size: cover;
+    }
+    .grid-img-datos-hilux{
+        background-image: url(../imagenes/hilux\ datos.png);
+        background-repeat: no-repeat no-repeat;
+        background-size: cover;
+    }
+
+    .section-grid{
+        display: grid;
+        background-color: #111;
+        margin: 10px;
+        border: 5px solid;
+        border-color:#976914;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .grid-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        border: 1px solid;
+        padding: 15px;
+    }
+    .texto{
+        grid-column: 1 / span 3;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    .img{
+        background-color: white;
+        border: 4px solid;
+        border-color: white;
+    }
+
+    .p{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .grid-img_vehiculo__corolla {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../imagenes/corolla.jpg);
+        background-repeat: no-repeat no-repeat;
+        background-size: cover;
+    }
+    .grid-img-motor-corolla {
+        background-image: url(../imagenes/corolla\ motor.jpg);
+        background-repeat: no-repeat no-repeat;
+        background-size: cover;
+    }
+    .grid-img-datos-corolla {
+        background-image: url(../imagenes/corolla\ datos2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
