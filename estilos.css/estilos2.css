@@ -17,7 +17,7 @@
     fieldset{
         max-width: 100%;
     }
-
+/* Animacion de contacto */
     .animacion-h1{
         animation-name: aparecer;
         animation-duration: 4s;
@@ -63,6 +63,7 @@
         }
     }
 
+    /* Class body inicio */
     .body-inicio{
         display: grid;
         grid-template-areas:
@@ -75,6 +76,7 @@
         background-image: linear-gradient(to bottom right, black, #976914);
     }
 
+    /* Class body quienes somos */
     .body-quienes {
         display: grid;
         grid-template-areas: 
@@ -88,11 +90,12 @@
         background-image: linear-gradient(to bottom right, black, #976914);
     }
 
+    /* Class body consecionarios */
     .body-consecionarios{
         background-image: linear-gradient(to bottom right, black, #976914);
     }
 
-    
+    /* Class body modelos */
     .body-modelos {
         
         background-color: black;
@@ -108,19 +111,19 @@
         background-image: linear-gradient(to bottom right, black, #976914);
     } 
 
+    /* Class body contacto */
     .body-contacto{
         background-image: linear-gradient(to bottom right, black, #976914); 
     }
 
-    
-
+    /* Header flex */
     header {
         display: flex;
         justify-content: center;
         grid-area: header;
     }
 
-
+    /* Menú de navegación */
     nav {
         display: flex;
         justify-content: center;
@@ -131,7 +134,7 @@
         grid-area: nav;
     }
 
-        
+    /* Lista desordenada del nav */
     ul {
         background-color: #976914;
         display: flex;
@@ -142,6 +145,7 @@
         list-style-type: none;
     }
 
+    /* Media query de ul */
     @media screen and (max-width: 450px) {
         ul {
             flex-direction: column;
@@ -169,14 +173,13 @@
         text-decoration: none;
     }
     
+    /* Media query de links del nav */
     @media screen and (max-width: 768px) {
         .nav li a {
             font-size: 8px;
         }
 
     }
-
-
 
     .section img {
         background-image: url(/imagenes/toyota\ section.jpg);
@@ -188,6 +191,7 @@
         grid-area: section;
     }
 
+    /* Section de quienes somos */
     .section article {
         color: whitesmoke;
         text-align: center;
@@ -196,16 +200,17 @@
         font-family: 'Roboto', sans-serif;
         margin: 10px 10px 10px 10px;
         padding: 15px;
-        text-align: center;
         grid-area: section_article;
     }
 
+    /* Media query de l texto quienes somos */
     @media screen and (max-width: 768px) {
         .section article {
             font-size: 10px;}
 
     }
 
+    /* Caja de quienes somos */
     .box1 {
         width: 100%;
         height: 300px;
@@ -214,6 +219,7 @@
         grid-area: box1 ;
     }
 
+    /* Media quety de caja de quienes somos */
     @media screen and (max-width: 768px) {
         .box1 {
             flex-direction: column;
@@ -226,7 +232,7 @@
         align-items: center;
     }
 
-
+    /* Párrafo de la caja de quienes somos (box1) */
     .box1 p {
         display: flex ;
         justify-content: center;
@@ -238,6 +244,7 @@
         margin-bottom: 10px;    
     }
 
+    /* Media query del párrafo de quienes somos */
     @media screen and (max-width: 767px) {
         .box1 p {
             flex-direction: row;
@@ -247,6 +254,7 @@
 
     }
 
+    /* Caja diaply grid de modelos */
     .box2_grid {
         display: grid;
         grid-template-rows: repeat(1, 1fr);
@@ -266,7 +274,7 @@
         border: 3px solid;
     }
 
-        
+    /* Media query del titulo del box 2 grid */
     @media screen and (max-width: 740px) { 
         .box2_h2{
             display: flex;
@@ -288,7 +296,7 @@
         border-color: black;
     }
 
-        
+    /* Media query del párrafo del box2 grid */
     @media screen and (max-width: 740px) { 
         .box2_p{
             display: flex;
@@ -299,7 +307,7 @@
         
     }
 
-    
+    /* Clas imagenes del box2 grid */
     .box2_img{
         display: flex;
         flex-wrap: nowrap;
@@ -308,13 +316,14 @@
         margin-bottom: 50px;
     }
 
+    /* Hover para imágenes box2 grid */
     .box2_img :hover{
         transform: scale(1.2);
         background-color: gray;
         transition: all .6s;
-    }    
+    }
 
-        
+    /* Media query para imagenes del box2 grid */
     @media screen and (max-width: 740px) { 
         .box2_img{
             display: flex;
@@ -326,11 +335,13 @@
         
     }
 
+    /* Formulario */
     .cartita {
         display: flex;
         justify-content: center;    
     }
 
+    /* Media query para el texto del formulario */
     @media screen and (max-width:710px) {
         .cartita{
             font-size: 12px;
@@ -346,6 +357,8 @@
         font-weight: 700;
         margin-top: 30px;
     }
+
+    /* Media queri para texto del formulario */
     @media screen and (max-width:460px) {
         .section_contacto_h1{
             font-size: 10px;
@@ -353,6 +366,7 @@
         
     }
 
+    /* Formulario */
     .form {
         width: 90%;
         display: flex;
@@ -368,6 +382,7 @@
         text-decoration: underline;
     }
 
+    /* Media query para el formnulario */
     @media screen and (max-width:460px) {
         .form{
             font-size: 12px;
@@ -380,6 +395,7 @@
         padding: 15px;
     }
 
+    /* Media query para el texto del fieldset */
     @media screen and (max-width:400px) {
         .form fieldset {
             font-size: 12px;
@@ -392,7 +408,7 @@
     max-width: 100%;
     }
 
-
+    /* Class para el footer */
     .footer {
         width: 100%;
         height: 150px;
@@ -405,6 +421,7 @@
         border: 1.5px solid;
     }
 
+    /* Media query del footer */
     @media screen and (max-width: 768px) {
         .footer {
             flex-direction: column;}
@@ -431,6 +448,7 @@
         font-weight: 700;
     }
 
+    /* Media query para textos del footer */
     @media screen and (max-width: 818px) {
         footer {
             font-size: 5px;
@@ -438,7 +456,7 @@
 
     }
 
-
+    /* Estilos para el section de consecionarios */
     .section_consecionarios{
         display: flex;
         flex-direction: column;
@@ -454,7 +472,7 @@
         font-weight: bolder;
     }
 
-    
+    /* Media query para los titulos del section de consecionarios */
     @media screen and (max-width: 768px) {
 
         .section_h1 {
@@ -473,6 +491,8 @@
         margin-bottom: 15px;
     }
 
+        /* Media query para los párrafos del section de consecionarios */
+
     @media screen and (max-width: 768px) {
 
         .section_p {
@@ -488,7 +508,7 @@
         font-family: 'Roboto', sans-serif;
     }
 
-
+    /* Caja de consecionarios */
     .box3 {
         width: 100%;
         height: 380px;
@@ -502,6 +522,7 @@
         justify-content: space-between;
     }
 
+    /* Media query para caja de consecionarios */
     @media screen and (max-width:710px) {
         .box3{
             flex-direction: column;
@@ -521,6 +542,7 @@
         color: white;
     }
 
+    /* Media query para titulos de consecionarios */
     @media screen and (max-width: 768px) {
 
         .box3 h3 {
@@ -534,7 +556,9 @@
     .box3 p {
         color: #976914;
     }
-    
+
+        /* Media query para párrafos de consecionarios */
+
     @media screen and (max-width: 768px) {
 
         .box3 p {
@@ -543,21 +567,26 @@
         }
 
     }
-    button{
+
+    /* Class para los button */
+    button {
         border-color: black;
         background-color: #976914;
         border-radius: 6px;
     }
 
+    /* Hover para los button */
     form button:hover {
         transform: scale(1.2);
     }
 
+    /* Estilos input */
     input {
         background-color: #976914;
         text-align: center;
     }
 
+    /* Pseudoclass para input */
     input:focus{
         width: 200px;
         outline: none;
