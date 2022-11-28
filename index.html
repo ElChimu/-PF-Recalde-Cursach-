@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,10 @@
     <!-- Favicon link -->
     <link rel="shortcut icon" href="./imagenes/logo toyota.jpg" type="image/x-icon">
     <!-- Animaciones link -->
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Link Css propio -->
     <link rel="stylesheet" href="estilos.css/estilos2.css">
     <title>Inicio</title>
@@ -23,30 +27,51 @@
     </header>
 
     <!-- Nav  -->
-    <nav class="nav">
-        <ul class="nav_ul">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pages/quienes-somos.html">Quiénes somos</a></li>
-            <li><a href="pages/modelos.html">Modelos</a></li>
-            <li><a href="pages/concesionarios.html">Concesionarios</a></li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/quienes-somos.html">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/modelos.html">Modelos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/concesionarios.html">Consecionarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- Sección principal -->
     <section class="section">
-        <img class="section-img wow animate__animated animate__bounceInLeft" src="./imagenes/toyota section.jpg" alt="toyota-section">
+        <img class="section-img wow animate__animated animate__bounceInLeft" src="./imagenes/toyota section.jpg"
+            alt="toyota-section">
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div>
-            <a href="https://www.instagram.com/toyota/" target="_blank"><img src="./imagenes/logoinstagram.jpg" alt="logo-instagram" width="25px"></a>
+            <a href="https://www.instagram.com/toyota/" target="_blank"><img src="./imagenes/logoinstagram.jpg"
+                    alt="logo-instagram" width="25px"></a>
         </div>
         <div>
-            <a href="https://wa.me/+541134351695?text= Hola!%20Estoy%20interesad@%20en%20comprar%20una%20vehículo%20"> <img src="./imagenes/logowhatsapp.png" alt="logo-whatsapp" width="25px"></a>
+            <a href="https://wa.me/+541134351695?text= Hola!%20Estoy%20interesad@%20en%20comprar%20una%20vehículo%20">
+                <img src="./imagenes/logowhatsapp.png" alt="logo-whatsapp" width="25px"></a>
         </div>
-        
+
 
         <h4 class="footer-h4">ESTA PÁGINA ES ILUSTRATIVA Y SIN FINES COMERCIALES.</h4>
         <p>Creada por Lucas Recalde Cursach</p>
@@ -54,10 +79,15 @@
     </footer>
 
     <!-- Link Animaciones -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
 </body>
 
