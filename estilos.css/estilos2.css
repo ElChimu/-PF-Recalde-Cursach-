@@ -73,7 +73,7 @@
         "footer footer footer";
 
         grid-template-columns: repeat(3 , 1fr);
-        background-image: linear-gradient(to bottom right, black, #976914);
+        background-image: linear-gradient(to bottom left, black, #976914);
     }
 
     /* Class body quienes somos */
@@ -87,12 +87,12 @@
         "footer footer footer";
 
         grid-template-columns: repeat(3 , 1fr);
-        background-image: linear-gradient(to bottom right, black, #976914);
+        background-image: linear-gradient(to bottom left, black, #976914);
     }
 
     /* Class body consecionarios */
     .body-consecionarios{
-        background-image: linear-gradient(to bottom right, black, #976914);
+        background-image: linear-gradient(to bottom left, black, #976914);
     }
 
     /* Class body modelos */
@@ -108,12 +108,12 @@
         "footer footer footer";
 
         grid-template-rows: repeat( 1, 1fr);
-        background-image: linear-gradient(to bottom right, black, #976914);
+        background-image: linear-gradient(to bottom left, black, #976914);
     } 
 
     /* Class body contacto */
     .body-contacto{
-        background-image: linear-gradient(to bottom right, black, #976914); 
+        background-image: linear-gradient(to bottom left, black, #976914); 
     }
 
     /* Header flex */
