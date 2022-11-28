@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+img{
+    max-width: 100%;
+}
+
+iframe{
+    max-width: 100%;
+}
+
+fieldset{
+    max-width: 100%;
+}
+/* Animacion de contacto */
+.animacion-h1{
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.section_p{
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.section_h1{
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Class body inicio */
+.body-inicio{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "section section section"
+    "footer footer footer";
+
+    grid-template-columns: repeat(3 , 1fr);
+    background-image: linear-gradient(to bottom left, black, #976914);
+}
+
+/* Class body quienes somos */
+.body-quienes {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "section section section"
+    "box1 box1 box1"
+    "footer footer footer";
+
+    grid-template-columns: repeat(3 , 1fr);
+    background-image: linear-gradient(to bottom left, black, #976914);
+}
+
+/* Class body consecionarios */
+.body-consecionarios{
+    background-image: linear-gradient(to bottom left, black, #976914);
+}
+
+/* Class body modelos */
+.body-modelos {
+    
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "section section section"
+    "box-hilux box-hilux box-hilux"
+    "footer footer footer";
+
+    grid-template-rows: repeat( 1, 1fr);
+    background-image: linear-gradient(to bottom left, black, #976914);
+} 
+
+/* Class body contacto */
+.body-contacto{
+    background-image: linear-gradient(to bottom left, black, #976914); 
+}
+
+/* Header flex */
+header {
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 10px;
+    grid-area: nav;
+}
+/* Lista desordenada del nav */
+ul {
+    background-color: #976914;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 10px;
+    list-style-type: none;
+}
+
+/* Media query de ul */
+@media screen and (max-width: 450px) {
+    ul {
+        flex-direction: column;
+    }
+
+}
+
+.ul li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.nav_ul :hover{
+    transform: scale(1.1);
+    background-color: gray;
+    transition: all .6s;
+}    
+
+.nav li a {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-inline: 15px;
+    text-decoration: none;
+}
+
+/* Media query de links del nav */
+@media screen and (max-width: 768px) {
+    .nav li a {
+        font-size: 8px;
+    }
+
+}
+
+.section img {
+    background-image: url(/imagenes/toyota\ section.jpg);
+    width: 100%;
+    height:100% ;
+}
+
+.section {
+    grid-area: section;
+}
+
+/* Section de quienes somos */
+.section article {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 10px 10px 10px;
+    padding: 15px;
+    grid-area: section_article;
+}
+
+/* Media query de l texto quienes somos */
+@media screen and (max-width: 768px) {
+    .section article {
+        font-size: 10px;}
+
+}
+
+/* Caja de quienes somos */
+.box1 {
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
+    display: flex;
+    grid-area: box1 ;
+}
+
+/* Media quety de caja de quienes somos */
+@media screen and (max-width: 768px) {
+    .box1 {
+        flex-direction: column;
+    }
+
+}
+
+.img quienes{
+    justify-content: center;
+    align-items: center;
+}
+
+/* Párrafo de la caja de quienes somos (box1) */
+.box1 p {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    text-align: center  ;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;   
+    margin-bottom: 10px;    
+}
+
+/* Media query del párrafo de quienes somos */
+@media screen and (max-width: 767px) {
+    .box1 p {
+        flex-direction: row;
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+
+}
+
+/* Caja diaply grid de modelos */
+.box2_grid {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-area: box-hilux;
+}
+
+
+.box2_h2 {
+    background-color: #976914;
+    padding: 8px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 25px;
+    border: 3px solid;
+}
+
+/* Media query del titulo del box 2 grid */
+@media screen and (max-width: 740px) { 
+    .box2_h2{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+    
+    
+}
+
+.box2_p {
+    display: flex;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center; 
+    margin-bottom: 40px;
+    border: 2px solid;
+    border-color: black;
+}
+
+/* Media query del párrafo del box2 grid */
+@media screen and (max-width: 740px) { 
+    .box2_p{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    
+    
+}
+
+/* Clas imagenes del box2 grid */
+.box2_img{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Hover para imágenes box2 grid */
+.box2_img :hover{
+    transform: scale(1.2);
+    background-color: gray;
+    transition: all .6s;
+}
+
+/* Media query para imagenes del box2 grid */
+@media screen and (max-width: 740px) { 
+    .box2_img{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    
+    
+}
+
+/* Formulario */
+.cartita {
+    display: flex;
+    justify-content: center;    
+}
+
+/* Media query para el texto del formulario */
+@media screen and (max-width:710px) {
+    .cartita{
+        font-size: 12px;
+    }
+    
+}
+
+.section_contacto_h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+/* Media queri para texto del formulario */
+@media screen and (max-width:460px) {
+    .section_contacto_h1{
+        font-size: 10px;
+    }
+    
+}
+
+/* Formulario */
+.form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    color: #976914;
+    background-color: #111;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Media query para el formnulario */
+@media screen and (max-width:460px) {
+    .form{
+        font-size: 12px;
+    }
+    
+}
+
+.form fieldset {
+    margin: 15px;
+    padding: 15px;
+}
+
+/* Media query para el texto del fieldset */
+@media screen and (max-width:400px) {
+    .form fieldset {
+        font-size: 12px;
+    }
+    
+}
+
+.cartita img {
+margin-top: 15px;
+max-width: 100%;
+}
+
+/* Class para el footer */
+.footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    background-size: cover;
+    margin-top: 25px;
+    grid-area: footer;
+    border: 1.5px solid;
+}
+
+/* Media query del footer */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;}
+
+}
+
+
+.footer a {
+    color: black;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer a :hover{
+    transform: scale(1.4);
+    background-color: gray;
+    transition: all .6s;
+}    
+
+.footer h4 {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* Media query para textos del footer */
+@media screen and (max-width: 818px) {
+    footer {
+        font-size: 5px;
+    }
+
+}
+
+/* Estilos para el section de consecionarios */
+.section_consecionarios{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.section_h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/* Media query para los titulos del section de consecionarios */
+@media screen and (max-width: 768px) {
+
+    .section_h1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+.section_p {
+    color: #976914;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+    /* Media query para los párrafos del section de consecionarios */
+
+@media screen and (max-width: 768px) {
+
+    .section_p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+}
+.footer p {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Caja de consecionarios */
+.box3 {
+    width: 100%;
+    height: 380px;
+    background-color: #111;
+    padding: 35px;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+}
+
+/* Media query para caja de consecionarios */
+@media screen and (max-width:710px) {
+    .box3{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    
+}
+
+.consecionarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box3 h3 {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Media query para titulos de consecionarios */
+@media screen and (max-width: 768px) {
+
+    .box3 h3 {
+        font-size: 10px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+}
+
+.box3 p {
+    color: #976914;
+}
+
+    /* Media query para párrafos de consecionarios */
+
+@media screen and (max-width: 768px) {
+
+    .box3 p {
+        font-size: 7px;
+        text-align: center;
+    }
+
+}
+
+/* Class para los button */
+button {
+    border-color: black;
+    background-color: #976914;
+    border-radius: 6px;
+}
+
+/* Hover para los button */
+form button:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos input */
+input {
+    background-color: #976914;
+    text-align: center;
+}
+
+/* Pseudoclass para input */
+input:focus{
+    width: 200px;
+    outline: none;
+}
+
+::placeholder{
+    color: black;
+}
