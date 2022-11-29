@@ -1,0 +1,114 @@
+/* Tipografía google */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/*Estilos HEADER*/
+
+header {
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+}
+
+/* Menú de navegación */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 10px;
+    grid-area: nav;
+}
+
+/* Lista desordenada del nav */
+
+ul {
+    background-color: #976914;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 10px;
+    list-style-type: none;
+
+    li {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+
+    li a {
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        margin-inline: 15px;
+        text-decoration: none;
+    }
+
+
+}
+
+
+
+    .nav_ul :hover {
+        transform: scale(1.1);
+        background-color: gray;
+        transition: all .6s;
+    }
+
+
+/* Class para el FOOTER */
+
+.footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    background-size: cover;
+    margin-top: 25px;
+    grid-area: footer;
+    border: 1.5px solid;
+
+    a {
+        color: black;
+        font-weight: 800;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        margin-top: 5px;
+        font-family: 'Roboto', sans-serif;
+    }   
+
+}
+
+/* Class para los button */
+
+button {
+    border-color: black;
+    background-color: #976914;
+    border-radius: 6px;
+}
+
+/* Estilos input */
+
+input {
+    background-color: #976914;
+    text-align: center;
+}
+
+
+
+

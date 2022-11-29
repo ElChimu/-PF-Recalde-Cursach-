@@ -1,116 +1,138 @@
-/* Media query de ul */
+/* Media query de UL */
 
 @media screen and (max-width: 450px) {
     ul {
         flex-direction: column;
     }
 
-}
+    /* Media query de links del NAV */
 
-/* Media query de links del nav */
-
-@media screen and (max-width: 768px) {
     .nav li a {
         font-size: 8px;
     }
 
 }
 
+/* Media query "QUIENES SOMOS */
 
-/* Media query de caja de quienes somos */
 @media screen and (max-width: 768px) {
+
+    /* Media query de caja de (QUIENES SOMOS) */
+
     .box1 {
         flex-direction: column;
     }
 
-}
+    /* Media query del 1er texto (QUIENES SOMOS) */
 
-
-/* Media query de l texto quienes somos */
-@media screen and (max-width: 768px) {
     .section article {
         font-size: 10px;
     }
 
-}
+    /* Media query del párrafo de (QUIENES SOMOS) */
 
-/* Media query del párrafo de quienes somos */
-@media screen and (max-width: 767px) {
     .box1 p {
-        flex-direction: row;
+        flex-direction: column;
         font-size: 8px;
         margin-bottom: 5px;
     }
 
+    img {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
-/* Media query del titulo del box 2 grid */
+/* Media query (MODELOS) */
+
 @media screen and (max-width: 740px) {
+
+    /* Media query del titulo del box 2 grid (MODELOS) */
+
     .box2_h2 {
         display: flex;
         flex-direction: column;
         font-size: 16px;
     }
 
+    /* Media query del párrafo del box2 grid (MODELOS) */
 
-}
-
-/* Media query del párrafo del box2 grid */
-@media screen and (max-width: 740px) {
     .box2_p {
         display: flex;
         flex-direction: column;
         font-size: 10px;
     }
 
+    /* Media query para imagenes del box2 grid (MODELOS) */
 
-}
-
-/* Media query para imagenes del box2 grid */
-@media screen and (max-width: 740px) {
     .box2_img {
         display: flex;
         flex-direction: column;
+        gap: 15px;
         justify-content: space-around;
         align-content: space-around;
     }
-
-
 }
 
-/* Media query para el texto del formulario */
+
+
+
+/* Media query para caja de (CONSECIONARIOS) */
+
 @media screen and (max-width:710px) {
-    .cartita {
-        font-size: 12px;
+    .box3 {
+        flex-direction: column;
+        row-gap: 10px;
     }
 
-}
+    /* Media query para titulos de (CONSECIONARIOS) */
 
-
-/* Media queri para texto del formulario */
-@media screen and (max-width:460px) {
-    .section_contacto_h1 {
+    .box3 h3 {
         font-size: 10px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    /* Media query para los titulos del section de (CONSECIONARIOS) */
+
+    .section_h1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* Media query para párrafos de (CONSECIONARIOS) */
+
+    .box3 p {
+        font-size: 7px;
+        text-align: center;
     }
 
 }
 
+/* Media query para el (FORMULARIO) */
 
-
-/* Media query para el formnulario */
 @media screen and (max-width:460px) {
+    
     .form {
         font-size: 12px;
     }
 
-}
+    /* Media query para el texto del (FORMULARIO) */
 
-
-
-/* Media query para el texto del fieldset */
-@media screen and (max-width:400px) {
-    .form fieldset {
+    .cartita {
         font-size: 12px;
     }
 
+    /* Media query para texto del (FORMULARIO) */
+
+    .section_contacto_h1 {
+        font-size: 10px;
+    }
+
+    /* Media query para el texto del fieldset (FORMULARIO) */
+
+    .form fieldset {
+        font-size: 12px;
+    }
 }

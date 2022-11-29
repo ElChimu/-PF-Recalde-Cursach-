@@ -1,0 +1,81 @@
+/*ANIMACIONES // PSEUDOCLASES*/
+
+/* Animacion de contacto */
+
+.animacion-h1 {
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.section_p {
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.section_h1 {
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.footer a :hover {
+    transform: scale(1.4);
+    background-color: gray;
+    transition: all .6s;
+}
+
+/* Hover para imágenes box2 grid */
+
+.box2_img :hover {
+    transform: scale(1.2);
+    background-color: gray;
+    transition: all .6s;
+}
+
+/* Hover para los button */
+
+form button:hover {
+    transform: scale(1.2);
+}
+
+/* Pseudoclass para input */
+
+input:focus {
+    width: 200px;
+    outline: none;
+}
+
+::placeholder {
+    color: black;
+}

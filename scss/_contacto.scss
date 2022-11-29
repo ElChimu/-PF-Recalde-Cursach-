@@ -1,6 +1,6 @@
 /* Class body contacto */
 
-.body-contacto{
+.body-contacto {
     background-image: linear-gradient(to bottom left, black, #976914);
 
     .section_contacto_h1 {
@@ -13,30 +13,37 @@
     }
 
     /* Formulario */
-.cartita {
-    display: flex;
-    justify-content: center;    
-}
+    .cartita {
+        display: flex;
+        justify-content: center;
+    }
 
-/* Formulario */
-.form {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
-    color: #976914;
-    background-color: #111;
-    margin-bottom: 25px;
-    margin-top: 40px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    text-decoration: underline;
-}
+    /* Formulario */
+    .form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        color: #976914;
+        background-color: #111;
+        margin-bottom: 25px;
+        margin-top: 40px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        text-decoration: underline;
+    }
 
-.form fieldset {
-    margin: 15px;
-    padding: 15px;
-}
-    
+    /* Imagen cartita */
+
+    .cartita img {
+        margin-top: 15px;
+        max-width: 100%;
+    }
+
+    .form fieldset {
+        margin: 15px;
+        padding: 15px;
+    }
+
 }
