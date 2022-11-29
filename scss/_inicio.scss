@@ -1,0 +1,20 @@
+/* Class body inicio */
+.body-inicio{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "section section section"
+    "footer footer footer";
+
+    grid-template-columns: repeat(3 , 1fr);
+    background-image: linear-gradient(to bottom left, black, #976914);  
+    
+    img {
+        background-image: url(/imagenes/toyota\ section.jpg);  
+    }
+
+    .section {
+        grid-area: section;
+    }
+}

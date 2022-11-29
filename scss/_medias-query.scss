@@ -1,0 +1,116 @@
+/* Media query de ul */
+
+@media screen and (max-width: 450px) {
+    ul {
+        flex-direction: column;
+    }
+
+}
+
+/* Media query de links del nav */
+
+@media screen and (max-width: 768px) {
+    .nav li a {
+        font-size: 8px;
+    }
+
+}
+
+
+/* Media query de caja de quienes somos */
+@media screen and (max-width: 768px) {
+    .box1 {
+        flex-direction: column;
+    }
+
+}
+
+
+/* Media query de l texto quienes somos */
+@media screen and (max-width: 768px) {
+    .section article {
+        font-size: 10px;
+    }
+
+}
+
+/* Media query del párrafo de quienes somos */
+@media screen and (max-width: 767px) {
+    .box1 p {
+        flex-direction: row;
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+
+}
+
+/* Media query del titulo del box 2 grid */
+@media screen and (max-width: 740px) {
+    .box2_h2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+
+}
+
+/* Media query del párrafo del box2 grid */
+@media screen and (max-width: 740px) {
+    .box2_p {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+
+}
+
+/* Media query para imagenes del box2 grid */
+@media screen and (max-width: 740px) {
+    .box2_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+
+}
+
+/* Media query para el texto del formulario */
+@media screen and (max-width:710px) {
+    .cartita {
+        font-size: 12px;
+    }
+
+}
+
+
+/* Media queri para texto del formulario */
+@media screen and (max-width:460px) {
+    .section_contacto_h1 {
+        font-size: 10px;
+    }
+
+}
+
+
+
+/* Media query para el formnulario */
+@media screen and (max-width:460px) {
+    .form {
+        font-size: 12px;
+    }
+
+}
+
+
+
+/* Media query para el texto del fieldset */
+@media screen and (max-width:400px) {
+    .form fieldset {
+        font-size: 12px;
+    }
+
+}
