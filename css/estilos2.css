@@ -285,6 +285,7 @@ input:focus {
 }
 .body-inicio img {
   background-image: url(/imagenes/toyota\ section.jpg);
+  justify-content: center;
 }
 .body-inicio .section {
   grid-area: section;
