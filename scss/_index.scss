@@ -1,0 +1,21 @@
+/* Class body inicio */
+.body-inicio {
+    @include grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    background-image: linear-gradient(to bottom left, $color-body);
+
+    .main {
+        grid-area: main;
+        @include flex-row;
+    }
+
+    img {
+        background-image: url(/imagenes/toyota\ section.jpg);
+        background-position: cover;
+    }
+
+}

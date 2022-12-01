@@ -1,17 +1,21 @@
 /* Class body modelos */
 
 .body-modelos {
-    background-color: black;
-    display: grid;
+    @include grid;
     grid-template-areas:
         "header header header"
         "nav nav nav"
+        "main main main"
         "section section section"
         "box-hilux box-hilux box-hilux"
         "footer footer footer";
+    background-image: linear-gradient(to bottom left,$color-body);
 
-    grid-template-rows: repeat(1, 1fr);
-    background-image: linear-gradient(to bottom left, black, #976914);
+    .main {
+        grid-area: main;
+        align-items: center;
+        justify-content: center;
+    }
 
     /* Caja diaply grid de modelos */
 
@@ -26,7 +30,7 @@
         background-color: #976914;
         padding: 8px;
         color: black;
-        font-family: 'Roboto', sans-serif;
+        font-family: $textos;
         font-weight: 900;
         text-decoration: underline;
         text-align: center;
@@ -35,14 +39,14 @@
     }
 
     .box2_p {
-        display: flex;
+        @include flex-row;
         color: grey;
-        font-family: 'Roboto', sans-serif;
+        font-family: $textos;
         font-weight: 400;
-        text-align: center;
         margin-bottom: 40px;
         border: 2px solid;
         border-color: black;
+        text-align: center;
     }
 
     /* Clas imagenes del box2 grid */

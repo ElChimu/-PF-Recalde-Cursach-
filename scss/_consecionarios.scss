@@ -1,28 +1,25 @@
 /* Class body consecionarios */
 
 .body-consecionarios {
-    background-image: linear-gradient(to bottom left, black, #976914);
+    background-image: linear-gradient(to bottom left, $color-body);
 
     /* Estilos para el section de consecionarios */
 
     .section_consecionarios {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
+        @include flex-column;
         row-gap: 40px;
     }
 
     .section_h1 {
         color: white;
-        font-family: 'Roboto', sans-serif;
+        font-family: $textos;
         font-size: 30px;
         font-weight: bolder;
     }
 
     .section_p {
         color: #976914;
-        font-family: 'Roboto', sans-serif;
+        font-family: $textos;
         font-size: 20px;
         font-weight: 500;
         text-align: center;
@@ -39,13 +36,12 @@
         flex-wrap: nowrap;
         text-align: center;
         align-content: space-around;
-        font-family: 'Roboto', sans-serif;
+        font-family: $textos;
         justify-content: space-between;
     }
 
     .consecionarios {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         justify-content: space-around;
     }
 
