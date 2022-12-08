@@ -118,7 +118,7 @@ fieldset {
   }
   /* Media query de links del NAV */
   .nav li a {
-    font-size: 8px;
+    font-size: 14px;
   }
 }
 /* Media query "QUIENES SOMOS */
@@ -129,12 +129,12 @@ fieldset {
   }
   /* Media query del 1er texto (QUIENES SOMOS) */
   .section article {
-    font-size: 10px;
+    font-size: 14px;
   }
   /* Media query del párrafo de (QUIENES SOMOS) */
   .box1 p {
     flex-direction: column;
-    font-size: 8px;
+    font-size: 12px;
     margin-bottom: 5px;
   }
   img {
@@ -184,7 +184,7 @@ fieldset {
   }
   /* Media query para párrafos de (CONSECIONARIOS) */
   .box3 p {
-    font-size: 7px;
+    font-size: 12px;
     text-align: center;
   }
 }
